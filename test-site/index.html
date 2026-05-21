@@ -13,22 +13,26 @@
     </head>
 
     <body>
+        <header>
+            <h1>Renewing the Social Model of Disability</h1>
 
-        <h1>Renewing the Social Model of Disability</h1>
+            <blockquote>
+                <p>"My life has two phases: before the social model of disability, and after it.</p>
+            </blockquote>
 
-        <blockquote>
-            <p>"My life has two phases: before the social model of disability, and after it.</p>
-        </blockquote>
+<nav aria-label="Page sections">
+  <ul>
+    <li><a href="#liz-crow">About Liz Crow</a></li>
+    <li><a href="#who-definitions">WHO Definitions</a></li>
+    <li><a href="#models">Models of Disability</a></li>
+    <li><a href="#impairment">Let's talk about impairment</a></li>
+  </ul>
+</nav>
+        </header>
         
-        <img 
-        src="images/medical-model.png"
-        alt="Diagram of the medical model of disability: a problem in body structure or function leads to impairment, 
-        impairment leads to disability, 
-        and disability is a restriction or lack of ability."
-        class="model-image"
-         />
+    <main>
 
-        <h2>About Liz Crow</h2>
+        <h2 id="liz-crow" tabindex="-1">About Liz Crow</h2>
 
             <p>
                 Liz Crow is a Feminist and Activist in disabled people‘s movement. 
@@ -44,7 +48,7 @@
             Read more about Liz Crow on the NDACA website.
             </a>
 
-        <h2>WHO Definitions</h2>
+        <h2 id="who-definitions">WHO Definitions</h2>
 
             <p>First, let's look at some definitions of the World Health Organisation (WHO):</p>
 
@@ -57,7 +61,17 @@
                     (resulting from an impairment) of ability to perform an activity in the manner 
                     or within the range considered normal for a human being."</p>
 
-        <h2>Models of Disability</h2>
+
+            <img 
+            src="images/medical-model.png"
+            alt="Diagram of the medical model of disability: a problem in body structure or function leads to impairment, 
+            impairment leads to disability, 
+            and disability is a restriction or lack of ability."
+            class="model-image"
+            />
+
+
+        <h2 id="models-of-disability">Models of Disability</h2>
 
             <p>There are different models of disability. We will look at the two most common ones.</p>
 
@@ -104,7 +118,7 @@
                 class="model-image"
                 />
         
-        <h2>Let's talk about impairment!</h2>
+        <h2 id="impairment">Let's talk about impairment!</h2>
                 <p>In the first moment, the social model was a great relief to many disabled people. However, it does have some flaws.
                 By rejecting impairment as relevant, it cannot fully acknowledge the subjective reality of many disabled people‘s daily lives.
                 Impairment can be problematic, even without external barriers, when it causes pain, illness, fatigue, shortened lifespan or other factors. 
@@ -139,6 +153,30 @@
                     The goal is not only to reduce the number of people with impairments, but also the number of people who are perceived as impaired. 
                     An example for better understanding: Until not that long ago, homosexuality was seen as something that has to be cured.
                 </p>
+    </main>
+
+
+       <script>
+  const sectionLinks = document.querySelectorAll('nav a[href^="#"]');
+
+  sectionLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      const targetId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        event.preventDefault();
+
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+        targetElement.focus();
+      }
+    });
+  });
+</script>
 
     </body>
 </html>

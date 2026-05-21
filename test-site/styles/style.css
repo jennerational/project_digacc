@@ -45,3 +45,11 @@ body {
 blockquote {
   font-size: 50px;
 }
+
+p: :focus-visible,
+h2:focus-visible,
+h3:focus-visible {
+  outline: 3px solid black;
+  outline-offset: 4px;
+  background-color: white;
+}
