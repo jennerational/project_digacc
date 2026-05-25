@@ -1,6 +1,6 @@
 html {
   /* px means "pixels". The base font size is now 12 pixels high */
-  font-size: 14px;
+  font-size: 100%;
   /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
   font-family: OPEN SANS;
 }
@@ -13,7 +13,7 @@ html {
 
 img {
   display: block;
-  margin: 9 auto;
+  margin: 1rem auto;
   max-width: 100%;
   height: auto;
 }
@@ -43,13 +43,11 @@ body {
 }
 
 blockquote {
-  font-size: 50px;
+  font-size: 100%;
 }
 
-p: :focus-visible,
-h2:focus-visible,
-h3:focus-visible {
-  outline: 3px solid black;
+a:focus,
+h2:focus {
+  outline: 3px solid #000;
   outline-offset: 4px;
-  background-color: white;
 }
