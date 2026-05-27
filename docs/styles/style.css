@@ -1,6 +1,13 @@
 html {
   font-size: 100%;
   font-family: OPEN SANS;
+  background-color: antiquewhite;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .model-image {
@@ -26,10 +33,6 @@ li {
   font-size: 1rem;
   line-height: 2;
   letter-spacing: 0.04rem;
-}
-
-html {
-  background-color: antiquewhite;
 }
 
 body {
