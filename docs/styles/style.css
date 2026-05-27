@@ -1,14 +1,11 @@
 html {
-  /* px means "pixels". The base font size is now 12 pixels high */
   font-size: 100%;
-  /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
   font-family: OPEN SANS;
 }
 
 .model-image {
   max-width: 100%;
   height: auto;
-  width: 600px;
 }
 
 img {
@@ -21,6 +18,7 @@ img {
 h1 {
   font-size: 40px;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 p,
@@ -50,4 +48,12 @@ a:focus,
 h2:focus {
   outline: 2px solid #000;
   outline-offset: 4px;
+}
+
+h2,
+h3,
+p,
+li,
+blockquote {
+  overflow-wrap: break-word;
 }
